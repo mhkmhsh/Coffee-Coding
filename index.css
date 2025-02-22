@@ -24,6 +24,55 @@ img {
     margin-right: 15px; /* Space between the image and the text */
 }
 
+.continue-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #352a22; /* Dark text color */
+    background: transparent; /* Transparent background */
+    border: 2px solid #352a22; /* Border color */
+    border-radius: 30px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-left: 20px; /* Space between text and button */
+}
+
+.continue-btn:hover {
+    background-color: #352a22; /* Dark background on hover */
+    color: #ffefdb; /* Light text color on hover */
+}
+
+/* New Drop Down Animation */
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile-responsive layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack image, text, and button vertically */
+        text-align: center; /* Center text */
+        align-items: center; /* Center contents horizontally */
+    }
+
+    img {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add margin between image and text */
+        width: 80%; /* Make image smaller on mobile */
+    }
+
+    .continue-btn {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add space above the button */
+    }
+}
+
 .cup {
     position: absolute; /* Position it in place */
     width: 220px;
@@ -112,71 +161,12 @@ img {
     animation: fadeOut 1s forwards;
 }
 
-/* New Drop Down Animation */
-@keyframes dropDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Initially hidden content */
-.hidden-content {
-    display: flex; /* Flexbox to arrange children in a row */
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    animation: dropDown 1s forwards;
-    animation-delay: 8s; /* Delay until the cup has disappeared */
-}
-
-
-
-.container {
-    display: flex;
-    justify-content: center; /* Center everything horizontally */
-    align-items: center; /* Center everything vertically */
-    height: 100vh;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden;
-    animation: dropDown 1s forwards;
-    animation-delay: 8s; /* Delay until the cup has disappeared */
-}
-
-img {
-    max-width: 100%;  
-        width: 50%; 
-    margin-right: 15px; 
-}
-
-.continue-btn {
-    color: #352a22; /* Dark text color */
-    background: transparent; /* Transparent background */
-    border: 2px solid #352a22; /* Border color */
-    border-radius: 30px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from link */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  
-}
-
-.continue-btn:hover {
-    background-color: #352a22; /* Dark background on hover */
-    color: #ffefdb; /* Light text color on hover */
-}
-
-/* New Drop Down Animation */
-@keyframes dropDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Add this new class to control the button's position after the animation */
+.move-btn {
+    margin-top: 75px;
+    margin-right: 400px;
+    padding-top: 75px;
+    padding-right: 400px;
+    position: relative;
+    top: 75px;
 }

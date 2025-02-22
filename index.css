@@ -1,16 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #ffefdb;
+    overflow: hidden;
 }
+.container {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 100vh;
+  }
+  img {
+    max-width: 100%;  /* Ensure the image is responsive */
+  }
 
 .cup {
     position: relative;
@@ -19,10 +22,10 @@ body {
     border: 8px solid #ffefdb;
     box-shadow: 0 0 0 12px #352a22;
     border-radius: 10px 10px 60px 75px;
-    background: url('../images/coffee.png');
+    background: url('coffee.png');
     background-repeat: repeat-x;
-    background-position: 0 130px;
     animation: filling 4s infinite;
+    z-index:1;
 }
 
 @keyframes filling {
@@ -86,4 +89,44 @@ body {
     height: 40px;
     background: #8e5a3433;
     animation-delay: 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.hide-after-2-rotations {
+    animation: fadeOut 1s forwards;
+}
+
+/* New Drop Down Animation */
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Initially hidden */
+.hidden-content {
+    opacity: 0;
+    visibility: hidden;
+    animation: dropDown 1s forwards;
+    animation-delay: 8s; /* Delay until the cup has disappeared */
+}
+
+
+#logo{
+    height:50%;
+    width:50%;
 }

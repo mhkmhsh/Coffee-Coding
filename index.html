@@ -2,12 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Marlboro Clubs Website</title>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,18 +14,19 @@
   </head>
 
   <body>
+    <div class="cup">
+      <span class="steam"></span>
+      <span class="steam"></span>
+      <span class="steam"></span>
+      <div class="cup-handle"></div>
+    </div>
 
-    
-  
-    
-        <div class="cup">
-            <span class="steam"></span>
-            <span class="steam"></span>
-            <span class="steam"></span>
-            <div class="cup-handle"></div>
-        </div>
-    
+    <!-- Hidden initially, will appear after loading animation -->
+    <div class="container hidden-content justify-content:center">
+     <img src="logo.png" alt="Image" class="img-fluid mx-auto d-block" id="logo"/>
+    <h1 class="text-center">Welcome to the Club!</h1>
+       </div>
 
+    <script src="index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>

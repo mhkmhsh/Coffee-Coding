@@ -6,17 +6,26 @@ body {
     background: #ffefdb;
     overflow: hidden;
 }
+
 .container {
-    display: grid;
-    place-items: center; /* Centers both horizontally and vertically */
+    display: flex;
+    justify-content: center; /* Align children (image and text) horizontally */
+    align-items: center; /* Center children vertically */
     height: 100vh;
-  }
-  img {
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    animation: dropDown 1s forwards;
+    animation-delay: 8s; /* Delay until the cup has disappeared */
+}
+
+img {
     max-width: 100%;  /* Ensure the image is responsive */
-  }
+    width: 50%; /* Set the image width */
+    margin-right: 15px; /* Space between the image and the text */
+}
 
 .cup {
-    position: relative;
+    position: absolute; /* Position it in place */
     width: 220px;
     height: 180px;
     border: 8px solid #ffefdb;
@@ -25,14 +34,13 @@ body {
     background: url('coffee.png');
     background-repeat: repeat-x;
     animation: filling 4s infinite;
-    z-index:1;
+    z-index: 1; /* Keep it above the content */
 }
 
 @keyframes filling {
     0%, 100% {
         background-position: 0 130px;
     }
-
     50% {
         background-position: 600px -70px;
     }
@@ -59,7 +67,6 @@ body {
     0%, 100% {
         opacity: 0;
     }
-
     50% {
         opacity: 1;
         filter: blur(.8px);
@@ -117,8 +124,11 @@ body {
     }
 }
 
-/* Initially hidden */
+/* Initially hidden content */
 .hidden-content {
+    display: flex; /* Flexbox to arrange children in a row */
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     visibility: hidden;
     animation: dropDown 1s forwards;
@@ -126,7 +136,47 @@ body {
 }
 
 
-#logo{
-    height:50%;
-    width:50%;
+
+.container {
+    display: flex;
+    justify-content: center; /* Center everything horizontally */
+    align-items: center; /* Center everything vertically */
+    height: 100vh;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    animation: dropDown 1s forwards;
+    animation-delay: 8s; /* Delay until the cup has disappeared */
+}
+
+img {
+    max-width: 100%;  
+        width: 50%; 
+    margin-right: 15px; 
+}
+
+.continue-btn {
+    color: #352a22; /* Dark text color */
+    background: transparent; /* Transparent background */
+    border: 2px solid #352a22; /* Border color */
+    border-radius: 30px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  
+}
+
+.continue-btn:hover {
+    background-color: #352a22; /* Dark background on hover */
+    color: #ffefdb; /* Light text color on hover */
+}
+
+/* New Drop Down Animation */
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -13,3 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
         hiddenContent.style.opacity = 1;  // Ensure the element becomes visible
     }, 8000);  // Same 8 seconds delay for consistency
 });
+
+// Get the button element
+// Select the button using its class
+const button = document.querySelector('.continue-btn');
+
+// Move the button down by 20px
+button.style.marginTop = '75px';
+// Move the button down by adding padding
+button.style.paddingTop = '75px';
+button.style.position = 'relative';
+button.style.top = '75px';
+

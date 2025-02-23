@@ -20,3 +20,14 @@ function showPage(pageNum) {
     showPage(1);
   };
   
+  const form = document.getElementById('multiPageForm');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();  // Prevent form from submitting normally
+
+  // Show a success message (instead of redirecting)
+  alert('Form submitted successfully!');
+
+  // Optionally, reset the form
+  form.reset();
+});

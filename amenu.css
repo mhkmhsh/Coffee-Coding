@@ -54,7 +54,7 @@ overflow-x:hidden;
 .navbar-mainbg {
     background-color: #352122;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
 }
 
 /* Navbar items */
@@ -227,18 +227,29 @@ overflow-x:hidden;
 
 /* rotating carousel*/
 /* Rotating Carousel Styles */
-.card-list .card-item {
-    color: #fadca8;
-    width: 400px;
-    padding: 35px;
+.card-item {
+    background: linear-gradient(135deg, #E68080, #352122);
+    color: #f8f0c9;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    backdrop-filter: blur(30px);
-    background: #fadca8;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    min-height: 200px;
+}
+
+.cardtitle{
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#E68080;
 }
 
 .card-list .card-item .user-image {
@@ -263,13 +274,13 @@ overflow-x:hidden;
 
 /* Swiper Pagination for Carousel */
 .slider-wrapper .swiper-pagination-bullet {
-    background: #6F4E37;
+    background: #E68080;
     height: 15px;
     width: 15px;
 }
 
 .slider-wrapper .swiper-slide-button {
-    color: #6F4E37;
+    color: #E68080;
     margin-top: -50px;
 }
 

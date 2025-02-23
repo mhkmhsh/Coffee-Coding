@@ -23,6 +23,31 @@ body {
     }
 
 
+
+.carousel-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  
+}
+
+.carousel {
+  height: 300px;
+  width: 600px;
+  overflow:hidden;
+  position: relative;
+  
+  
+}
+.carousel-img {
+  position:absolute;
+  max-width: 150%;
+  height: auto;
+  left: -20%;
+}
+
+
 /* Navbar styles */
 .navbar-logo {
   padding: 15px;
@@ -32,7 +57,7 @@ body {
 .navbar-mainbg {
   background-color: #352122;
   padding: 0px;
-  font-family: 'Shrikhand', cursive;
+ font-family: "Raleway", serif;
 }
 
 /* Navbar items */

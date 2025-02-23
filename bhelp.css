@@ -111,7 +111,7 @@ body{
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        box-shadow: 0px 4px 10px rgb(0, 0, 0);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.701);
         animation: gradientAnimation 6s infinite alternate ease-in-out;
         padding: 20px;
     }

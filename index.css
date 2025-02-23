@@ -5,6 +5,7 @@ body {
     justify-content: center;
     background: #ffefdb;
     overflow: hidden;
+    font-family: "Raleway", serif;
 }
 
 .container {
@@ -18,28 +19,14 @@ body {
     animation-delay: 8s; /* Delay until the cup has disappeared */
 }
 
+/* loading page coffee*/
 img {
     max-width: 100%;  /* Ensure the image is responsive */
     width: 50%; /* Set the image width */
     margin-right: 15px; /* Space between the image and the text */
 }
 
-.continue-btn {
-    padding: 15px 30px;
-    font-size: 18px;
-    color: #352a22; /* Dark text color */
-    background: transparent; /* Transparent background */
-    border: 2px solid #352a22; /* Border color */
-    border-radius: 30px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from link */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    margin-left: 20px; /* Space between text and button */
-}
 
-.continue-btn:hover {
-    background-color: #352a22; /* Dark background on hover */
-    color: #ffefdb; /* Light text color on hover */
-}
 
 /* New Drop Down Animation */
 @keyframes dropDown {
@@ -73,6 +60,8 @@ img {
     }
 }
 
+
+
 .cup {
     position: absolute; /* Position it in place */
     width: 220px;
@@ -80,7 +69,7 @@ img {
     border: 8px solid #ffefdb;
     box-shadow: 0 0 0 12px #352a22;
     border-radius: 10px 10px 60px 75px;
-    background: url('coffee.png');
+    background: url('img/coffee.png');
     background-repeat: repeat-x;
     animation: filling 4s infinite;
     z-index: 1; /* Keep it above the content */
@@ -161,12 +150,20 @@ img {
     animation: fadeOut 1s forwards;
 }
 
+/* loading page coffee ending*/
+
 /* Add this new class to control the button's position after the animation */
-.move-btn {
-    margin-top: 75px;
-    margin-right: 400px;
-    padding-top: 75px;
-    padding-right: 400px;
-    position: relative;
-    top: 75px;
+
+
+/* coffee cup button start */
+
+.Click{
+    font-size:30px;
 }
+
+img{
+    height: 120%;
+    width:120%;
+}
+
+/* coffee cup button end */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Page Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form id="multiPageForm" action="mailto:c077eeandc0ding@gmail.com" method="post" enctype="text/plain">
+    <!-- Page 1: Name, Email, Grade Level -->
+    <div class="form-page" id="page1">
+      <h2>Page 1: Personal Information</h2>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="grade">Grade Level:</label>
+      <select id="grade" name="grade" required>
+        <option value="sophomore">Sophomore</option>
+        <option value="junior">Junior</option>
+        <option value="senior">Senior</option>
+        <option value="parent">Parent</option>
+      </select>
+
+      <button type="button" class="next-button" onclick="nextPage(2)">Next</button>
+    </div>
+
+    <!-- Page 2: Help Request and Availability -->
+    <div class="form-page" id="page2">
+      <h2>Page 2: Request for Help</h2>
+      <label for="help-request">What do you need help with?</label>
+      <textarea id="help-request" name="help-request" rows="4" required></textarea>
+
+      <label for="availability">When are you available?</label>
+      <select id="availability" name="availability" required>
+        <option value="friday-8-8:24">Friday 8:00 - 8:24 AM</option>
+        <option value="lunch-12-12:30">Lunch 12:00 - 12:30 PM</option>
+      </select>
+
+      <button type="button" class="previous-button" onclick="previousPage(1)">Previous</button>
+      <button type="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+
+  <script src="form.js"></script>
+</body>
+</html>

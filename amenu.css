@@ -448,3 +448,29 @@ overflow-x:hidden;
 }
 
 
+.coffee-coding-title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #f8f0c9;
+    background: linear-gradient(135deg, #E68080, #352122);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.image-container {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #E68080, #352122); /* Gradient Border */
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Limit max width */
+    border-radius: 20px;
+    display: block;
+}

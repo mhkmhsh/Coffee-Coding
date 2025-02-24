@@ -362,39 +362,44 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.grid-container {
+}.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-
-    max-width: 1200px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Adjust to your desired number of columns */
+    gap: 1rem;
 }
+
 .grid-item {
     position: relative;
-    background-color: #ddd;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden; /* Ensures hover effect is constrained to the image */
     text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.grid-item:hover {
-    background-color: #333;
-    color: #fff;
-    transform: scale(1.05);
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for image scaling */
 }
+
+.grid-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 .grid-item span {
-    font-size: 18px;
-    font-weight: bold;
-    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px 10px;
+    font-size: 1rem;
     transition: opacity 0.3s ease-in-out;
+    opacity: 0;
 }
+
 .grid-item:hover span {
-    opacity: 1;
+    opacity: 1; /* Show the text when hovered */
 }

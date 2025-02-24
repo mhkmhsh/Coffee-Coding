@@ -476,7 +476,7 @@ body {
 }
 
 #msform fieldset{
-  background: white;
+  background: #FFEFDB;
   border: 0 none;
   border-radius: 0.5rem;
   box-sizing: border-box;
@@ -504,7 +504,7 @@ body {
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #2C3E50;
-  background-color: #ECEFF1;
+  background-color:#FFEFDB;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -521,7 +521,7 @@ body {
   width: 100px;
   background: #E68080;
   font-weight: bold;
-  color: white;
+  color: #FFEFDB;
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
@@ -531,14 +531,14 @@ body {
 }
 #msform .action-button:hover,
 #msform .action-button:focus {
-  background-color: #311B92
+  background-color: #E68080;
 }
 
 #msform .action-button-previous {
   width: 100px;
   background: #616161;
   font-weight: bold;
-  color: white;
+  color: #FFEFDB;
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
@@ -587,7 +587,7 @@ body {
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
-  color: lightgrey
+  color: #FFEFDB;
 }
 
 #progressbar .active {
@@ -629,7 +629,7 @@ body {
   line-height: 45px;
   display: block;
   font-size: 20px;
-  color: #ffffff;
+  color: #FFEFDB;
   background: lightgray;
   border-radius: 50%;
   margin: 0 auto 10px auto;
@@ -669,7 +669,7 @@ body {
 }
 
 #msform fieldset{
-  background: white;
+  background: #FFEFDB;
   border: 0 none;
   border-radius: 0.5rem;
   box-sizing: border-box;
@@ -697,7 +697,7 @@ body {
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #2C3E50;
-  background-color: #ECEFF1;
+  background-color:#FFEFDB;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -714,7 +714,7 @@ body {
   width: 100px;
   background: #E68080;
   font-weight: bold;
-  color: white;
+  color: #FFEFDB;
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
@@ -724,14 +724,14 @@ body {
 }
 #msform .action-button:hover,
 #msform .action-button:focus {
-  background-color: #311B92
+  background-color: #E68080;
 }
 
 #msform .action-button-previous {
   width: 100px;
   background: #616161;
   font-weight: bold;
-  color: white;
+  color: #FFEFDB;
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
@@ -780,7 +780,7 @@ body {
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
-  color: lightgrey
+  color: lightgrey;
 }
 
 #progressbar .active {
@@ -822,7 +822,7 @@ body {
   line-height: 45px;
   display: block;
   font-size: 20px;
-  color: #ffffff;
+  color: #FFEFDB;
   background: lightgray;
   border-radius: 50%;
   margin: 0 auto 10px auto;
@@ -927,4 +927,11 @@ body {
       opacity: 1;
       transform: translateY(0);
   }
+}
+
+
+.form{
+  color:#352122;
+  background-color: #FFEFDB;
+  
 }

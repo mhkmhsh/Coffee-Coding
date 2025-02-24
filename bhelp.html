@@ -48,121 +48,36 @@
 <div class="coffee-coding-title p-3 m-5">
     WEBSITES TO LOOK AT
 </div>
+<div id="helpContainer">
+    <div class="container my-4">
+        <div id="photoBooth" class="text-center bg-white p-3 rounded shadow-sm mx-auto">
+            <h1 class="banner mb-3" id="text">Web Development Resources</h1>
+            <div id="slideShow" class="row justify-content-center">
 
-<div class="row">
-    <!-- CSS Snippets and Utilities -->
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://css-tricks.com/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>CSS-Tricks</p>
+                <!-- Photo Holder Section -->
+                <div class="col-12 col-md-8 photoHolder mb-3">
+                    <img class="thumbnail img-fluid" id="photo"
+                        src="https://via.placeholder.com/518x389?text=Welcome+to+the+Web+Dev+Gallery"
+                        alt="Website Thumbnail" />
                 </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://www.smashingmagazine.com/category/css/"
-            class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Smashing Magazine</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://cssdeck.com/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>CSS Deck</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://getbootstrap.com/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Bootstrap Hover Effects</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://www.tutorialrepublic.com/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Tutorial Republic</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://codepen.io/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>CodePen</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://cssgrid-generator.netlify.app/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>CSS Grid Generator</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://cssreference.io/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>CSS Reference</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://navbar.gallery/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Navbar Gallery</p>
-                </div>
-            </div>
-        </a></div>
 
-    <!-- Animations -->
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://animate.style/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Animate.css</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://ianlunn.github.io/Hover/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Hover.css</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://animista.net/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Animista</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://cssanimation.io/" class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>CSS Animation Cheat Sheet</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://www.minimamente.com/project/magic/"
-            class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Magic Animations</p>
-                </div>
-            </div>
-        </a></div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><a href="https://kristofferandreasen.github.io/wickedCSS/"
-            class="image-link">
-            <div class="image-container">
-                <div class="overlay">
-                    <p>Wicked CSS</p>
-                </div>
-            </div>
-        </a></div>
+                <!-- More Indicator and Navigation Controls -->
 
-    <!-- Add remaining 36 links following the same format -->
+                <div id="nav" class="col-12 d-flex justify-content-between">
+                    <img id="prevPhoto" class="rot180 img-fluid" src="img/arrow.png" alt="Previous Website" />
+                    <img id="nextPhoto" class="img-fluid" src="img/arrow.png" alt="Next Website" />
+                </div>
+
+                <!-- Website Details Section -->
+                <div class="col-12 details mt-3 p-2">
+                    <h3 class="websiteName"></h3>
+                    <p class="websiteTitle"><strong>Type:</strong> </p>
+                    <p><a class="websiteLink" href="#" target="_blank">Visit Website</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </div>
 <!-- Footer and Scripts -->

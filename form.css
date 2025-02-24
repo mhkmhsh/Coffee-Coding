@@ -233,13 +233,7 @@ body {
   font-weight: normal;
 }
 
-#msform{
-  text-align: center;body {
-  overflow-x: hidden;
-  background:#FFEFDB;
-  color: #352122;
-  font-family: 'Shrikhand', cursive;
-}
+
   /*scrollbar styling */
   ::-webkit-scrollbar {
       width: 12px; 
@@ -462,7 +456,7 @@ body {
       left: -25px;
   }
 }
-
+/*Star*/
 #heading{
   text-transform: uppercase;
   color: #E68080;
@@ -476,18 +470,24 @@ body {
 }
 
 #msform fieldset{
-  background: #FFEFDB;
+  background: #FFFFFF; /* Set the background of the fieldset to white */
   border: 0 none;
   border-radius: 0.5rem;
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding-bottom: 20px;
+  padding: 40px 30px; /* Adjust padding to provide space for questions */
   position: relative;
 }
 
 .form-card{
-  text-align: center;
+  text-align: left; /* Align text to left */
+  padding: 0; /* Remove extra padding to avoid inner white box */
+  background-color: transparent; /* Make sure no white background inside */
+  border-radius: 0.5rem; /* Ensure the corners are rounded */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  width: 100%;
+  margin: 0;
 }
 
 #msform fieldset:not(:first-of-type){
@@ -495,9 +495,9 @@ body {
 }
 
 #msform input, #msform textarea{
-  padding: 8px 15px 8px 15px;
+  padding: 10px 15px;
   border: 1px solid #ccc;
-  border-radius: 0px;
+  border-radius: 5px;
   margin-bottom: 25px;
   margin-top: 2px;
   width: 100%;
@@ -510,10 +510,8 @@ body {
 }
 
 #msform input:focus, #msform textarea:focus{
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: px solid #E68080;
+  border: 1px solid #E68080;
   outline-width: 0;
 }
 
@@ -529,6 +527,7 @@ body {
   margin: 10px 0px 10px 5px;
   float: right;
 }
+
 #msform .action-button:hover,
 #msform .action-button:focus {
   background-color: #E68080;
@@ -544,211 +543,18 @@ body {
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px 10px 0px;
-  float: right
-}
-
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-  background-color: #000000
-}
-
-.card {
-  z-index: 0;
-  border: none;
-  position: relative
-}
-
-.fs-title {
-  font-size: 25px;
-  color: #E68080;
-  margin-bottom: 15px;
-  font-weight: normal;
-  text-align: left
-}
-
-.purple-text {
-  color: #E68080;
-  font-weight: normal
-}
-
-.steps {
-  font-size: 25px;
-  color: gray;
-  margin-bottom: 10px;
-  font-weight: normal;
-  text-align: right
-}
-
-.fieldlabels {
-  color: gray;
-  text-align: left
-}
-
-#progressbar {
-  margin-bottom: 30px;
-  overflow: hidden;
-  color: #FFEFDB;
-}
-
-#progressbar .active {
-  color: #E68080;
-}
-
-#progressbar li {
-  list-style-type: none;
-  font-size: 15px;
-  width: 25%;
-  float: left;
-  position: relative;
-  font-weight: 400
-}
-
-#progressbar #account:before {
-  font-family: FontAwesome;
-  content: "\f13e"
-}
-
-#progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007"
-}
-
-#progressbar #payment:before {
-  font-family: FontAwesome;
-  content: "\f030"
-}
-
-#progressbar #confirm:before {
-  font-family: FontAwesome;
-  content: "\f00c"
-}
-
-#progressbar li:before {
-  width: 50px;
-  height: 50px;
-  line-height: 45px;
-  display: block;
-  font-size: 20px;
-  color: #FFEFDB;
-  background: lightgray;
-  border-radius: 50%;
-  margin: 0 auto 10px auto;
-  padding: 2px
-}
-
-#progressbar li:after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: lightgray;
-  position: absolute;
-  left: 0;
-  top: 25px;
-  z-index: -1
-}
-
-#progressbar li.active:before,
-#progressbar li.active:after {
-  background: #E68080;
-}
-
-.progress {
-  height: 20px
-}
-
-.progress-bar {
-  background-color: #E68080;
-}
-
-.fit-image {
-  width: 100%;
-  object-fit: cover
-}
-  position: relative;
-  margin-top: 20px;
-}
-
-#msform fieldset{
-  background: #FFEFDB;
-  border: 0 none;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.form-card{
-  text-align: center;
-}
-
-#msform fieldset:not(:first-of-type){
-  display: none;
-}
-
-#msform input, #msform textarea{
-  padding: 8px 15px 8px 15px;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  margin-bottom: 25px;
-  margin-top: 2px;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #2C3E50;
-  background-color:#FFEFDB;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-#msform input:focus, #msform textarea:focus{
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: px solid #E68080;
-  outline-width: 0;
-}
-
-#msform .action-button{
-  width: 100px;
-  background: #E68080;
-  font-weight: bold;
-  color: #FFEFDB;
-  border: 0 none;
-  border-radius: 0px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 0px 10px 5px;
   float: right;
 }
-#msform .action-button:hover,
-#msform .action-button:focus {
-  background-color: #E68080;
-}
-
-#msform .action-button-previous {
-  width: 100px;
-  background: #616161;
-  font-weight: bold;
-  color: #FFEFDB;
-  border: 0 none;
-  border-radius: 0px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 5px 10px 0px;
-  float: right
-}
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-  background-color: #000000
+  background-color: #000000;
 }
 
 .card {
   z-index: 0;
   border: none;
-  position: relative
+  position: relative;
 }
 
 .fs-title {
@@ -756,12 +562,12 @@ body {
   color: #E68080;
   margin-bottom: 15px;
   font-weight: normal;
-  text-align: left
+  text-align: left;
 }
 
 .purple-text {
-  color:#E68080;
-  font-weight: normal
+  color: #E68080;
+  font-weight: normal;
 }
 
 .steps {
@@ -769,18 +575,19 @@ body {
   color: gray;
   margin-bottom: 10px;
   font-weight: normal;
-  text-align: right
+  text-align: right;
 }
 
 .fieldlabels {
   color: gray;
-  text-align: left
+  text-align: left;
 }
 
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
-  color: lightgrey;
+  color: #FFEFDB;
+  padding: 0 20px; /* Add padding on the left and right */
 }
 
 #progressbar .active {
@@ -793,27 +600,27 @@ body {
   width: 25%;
   float: left;
   position: relative;
-  font-weight: 400
+  font-weight: 400;
 }
 
 #progressbar #account:before {
   font-family: FontAwesome;
-  content: "\f13e"
+  content: "\f13e";
 }
 
 #progressbar #personal:before {
   font-family: FontAwesome;
-  content: "\f007"
+  content: "\f007";
 }
 
 #progressbar #payment:before {
   font-family: FontAwesome;
-  content: "\f030"
+  content: "\f030";
 }
 
 #progressbar #confirm:before {
   font-family: FontAwesome;
-  content: "\f00c"
+  content: "\f00c";
 }
 
 #progressbar li:before {
@@ -826,7 +633,7 @@ body {
   background: lightgray;
   border-radius: 50%;
   margin: 0 auto 10px auto;
-  padding: 2px
+  padding: 2px;
 }
 
 #progressbar li:after {
@@ -837,7 +644,7 @@ body {
   position: absolute;
   left: 0;
   top: 25px;
-  z-index: -1
+  z-index: -1;
 }
 
 #progressbar li.active:before,
@@ -846,25 +653,22 @@ body {
 }
 
 .progress {
-  height: 20px
+  height: 20px;
 }
 
 .progress-bar {
-  background-color:#E68080;
+  background-color: #E68080;
 }
 
 .fit-image {
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
-
-
-
 
 .footer {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg, #E68080,#E68080,  #352122);
+  background: linear-gradient(135deg, #E68080, #E68080, #352122);
   animation: fadeIn 2s ease-in-out;
   position: relative;
 }
@@ -920,18 +724,16 @@ body {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-
-.form{
-  color:#352122;
+.form {
+  color: #352122;
   background-color: #FFEFDB;
-  
 }

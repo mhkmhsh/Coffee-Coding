@@ -364,100 +364,64 @@ body {
     }
 }
 
-/* PhotoBooth Container */
-#photoBooth {
-    padding: 25px;
-    max-width: 500px;
-    width: 90%;
-    margin: auto;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Slideshow Title */
-#text {
-    color: #690000;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* Holds the displayed photo */
-.photoHolder {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
     width: 100%;
-    text-align: center;
-}
+  }
 
-/* Style for the displayed photo */
-.thumbnail {
+  .grid-item {
+    position: relative;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
 
-/* Navigation Button Styling */
-#nav {
+  .grid-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    transition: transform 0.3s ease;
+  }
+
+  .grid-item:hover iframe {
+    transform: scale(1.05);
+  }
+
+  .grid-item .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-}
-
-#nav img {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    transition: transform 0.3s, opacity 0.3s ease-in-out;
-}
-
-#nav img:hover {
-    opacity: 0.7;
-}
-
-/* More Indicator */
-.moreIndicator {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Rotations with Smooth Animation */
-.rot90 {
-    transform: rotate(90deg);
-}
-
-.rot180 {
-    transform: rotate(180deg);
-}
-
-.rot270 {
-    transform: rotate(270deg);
-}
-
-/* iFrame Container */
-.iframe-container {
-    width: 100%;
-    height: 400px; /* Adjust as needed */
-    border-radius: 8px;
-    border: 1px solid #ccc;
-}
-
-/* Website Details Box */
-.details {
-    border: 1px dashed #000000;
-    padding: 15px;
-    background-color: #E68080;
-    border-radius: 4px;
-    color: #352122;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.details p,
-.details a {
-    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
     font-weight: bold;
-    color: #785A44;
-}
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .grid-item:hover .title {
+    opacity: 1;
+  }
+
+  .grid-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-decoration: none;
+  }

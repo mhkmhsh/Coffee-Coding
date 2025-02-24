@@ -584,3 +584,19 @@ overflow-x:hidden;
 }
 
 
+.container {
+    margin-top: 30px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.dropdown-container {
+    margin-top: 20px;
+}
+.dropdown-container select,
+.dropdown-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}

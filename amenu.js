@@ -99,5 +99,44 @@ function test() {
 
 
 
-  // HERO 
+  // img jq$(document).ready(function() {
+    $(document).ready(function() {
+      const images = [
+          {
+              src: "img/grid11.webp",
+              alt: "Image 1",
+              text: "Information about Image 1"
+          },
+          {
+              src: "img/grid12.webp",
+              alt: "Image 2",
+              text: "Information about Image 2"
+          },
+          {
+              src: "img/grid13.jpg",
+              alt: "Image 3",
+              text: "Information about Image 3"
+          }
+      ];
+  
+      images.forEach(image => {
+          const imageHTML = `
+              <div class="col-md-4 col-sm-12 text-center">
+                  <div class="image-container">
+                      <img src="${image.src}" alt="${image.alt}" class="responsive-img">
+                  </div>
+                  <div class="info-container" style="display: none;">
+                      <p>${image.text}</p>
+                  </div>
+              </div>
+          `;
+          $('#image-gallery').append(imageHTML);
+      });
+  
+      // Toggle the info container when image is clicked
+      $('#image-gallery').on('click', '.responsive-img', function() {
+          const infoContainer = $(this).closest('.col-md-4').find('.info-container');
+          infoContainer.toggle();  // Toggle visibility of the text container
+      });
+  });
   

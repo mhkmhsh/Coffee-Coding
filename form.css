@@ -582,7 +582,9 @@ body {
   color: gray;
   text-align: left;
 }
-
+.progresswrapper{
+  padding:0 20px;
+}
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;

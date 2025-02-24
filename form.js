@@ -74,16 +74,16 @@ $(document).ready(function() {
   var opacity;
   var current = 1;
   var steps = $("fieldset").length;
-  
+
   setProgressBar(current);
-  
+
   $(".next").click(function() {
     current_fs = $(this).parent();
     next_fs = $(this).parent().next();
-    
+
     // Add Class Active
     $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-    
+
     // Show the next fieldset
     next_fs.show();
     // Hide the current fieldset with animation
@@ -104,10 +104,10 @@ $(document).ready(function() {
   $(".previous").click(function() {
     current_fs = $(this).parent();
     previous_fs = $(this).parent().prev();
-    
+
     // Remove class active
     $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-    
+
     // Show the previous fieldset
     previous_fs.show();
     // Hide the current fieldset with animation
@@ -128,11 +128,19 @@ $(document).ready(function() {
   function setProgressBar(curStep) {
     var percent = parseFloat(100 / steps) * curStep;
     percent = percent.toFixed();
-    $(".progress-bar")
-    .css("width", percent + "%");
+    $(".progress-bar").css("width", percent + "%");
   }
-  
+
+  // Modify the submit click function
   $(".submit").click(function() {
-    return false;
+    // Check if the form is valid before submitting
+    if ($("#msform")[0].checkValidity()) {
+      // Allow the form to submit to Formspree
+      $("#msform")[0].submit(); 
+    } else {
+      // Show an alert if form is not valid
+      alert("Please complete all required fields before submitting.");
+    }
   });
 });
+

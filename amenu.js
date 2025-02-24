@@ -99,23 +99,24 @@ function test() {
 
 
 
-  // img jq$(document).ready(function() {
+  // img jq
+ 
     $(document).ready(function() {
       const images = [
           {
               src: "img/grid11.webp",
               alt: "Image 1",
-              text: "Information about Image 1"
+              text: "Sophmore Year: HTML, CSS, Bootstrap"
           },
           {
               src: "img/grid12.webp",
               alt: "Image 2",
-              text: "Information about Image 2"
+              text: "Junior Year: Javascript, Refine HTML and CSS skills"
           },
           {
               src: "img/grid13.jpg",
               alt: "Image 3",
-              text: "Information about Image 3"
+              text: "Senior Year: JQuery, Vue, NJIT projects"
           }
       ];
   

@@ -68,9 +68,8 @@ $(window).scroll(function () {
 
 // HERO 
 
-
 $(document).ready(function() {
-  var current_fs, next_fs, previous_fs; //fieldsets
+  var current_fs, next_fs, previous_fs; // Fieldsets
   var opacity;
   var current = 1;
   var steps = $("fieldset").length;
@@ -128,19 +127,14 @@ $(document).ready(function() {
   function setProgressBar(curStep) {
     var percent = parseFloat(100 / steps) * curStep;
     percent = percent.toFixed();
-    $(".progress-bar").css("width", percent + "%");
+    $(".progress-bar")
+      .css("width", percent + "%");
   }
 
-  // Modify the submit click function
-  $(".submit").click(function() {
-    // Check if the form is valid before submitting
-    if ($("#msform")[0].checkValidity()) {
-      // Allow the form to submit to Formspree
-      $("#msform")[0].submit(); 
-    } else {
-      // Show an alert if form is not valid
-      alert("Please complete all required fields before submitting.");
-    }
+  // Remove custom submit behavior (mailto will handle submission)
+  $(".submit").click(function(event) {
+    // No need to prevent default anymore for mailto
   });
 });
+
 

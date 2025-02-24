@@ -363,12 +363,11 @@ body {
         transform: translateY(0);
     }
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    width: 80%;
+
     max-width: 1200px;
     padding: 20px;
 }

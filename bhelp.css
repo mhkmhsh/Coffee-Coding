@@ -340,3 +340,73 @@ body{
         left: -25px;
     }
 }
+
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #E68080,#E68080,  #352122);
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+}
+
+.footer h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+}
+
+.footer a {
+    color: #FFEFDB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #785A44;
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #FFEFDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #352122;
+    font-size: 1.5rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    background: #785A44;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

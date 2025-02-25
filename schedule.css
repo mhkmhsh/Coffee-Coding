@@ -119,23 +119,7 @@ body{
       }
       
       
-/*scrollbar styling */
-::-webkit-scrollbar {
-    width: 12px; 
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #2F3133; 
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #E68080; 
-      
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #785A44;
-  }
+
 
   .carousel-container {
     display:flex;
@@ -349,6 +333,7 @@ body{
     background: linear-gradient(135deg, #E68080,#E68080,  #352122);
     animation: fadeIn 2s ease-in-out;
     position: relative;
+  
 }
 
 .footer h2 {
